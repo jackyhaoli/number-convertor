@@ -2,3 +2,8 @@
 2018-09-12 20:08:27.778 INFO  com.convertor.number.RomanNumberHelper [29] latinToRomanNumber --  369 --> CCCLXIX
 2018-09-12 20:10:07.457 INFO  com.convertor.number.RomanNumberHelper [29] latinToRomanNumber --  9 --> IX
 2018-09-12 20:10:07.463 INFO  com.convertor.number.RomanNumberHelper [29] latinToRomanNumber --  369 --> CCCLXIX
+2018-09-12 20:31:02.193 INFO  com.convertor.number.RomanNumberHelper [31] latinToRomanNumber --  9 --> IX
+2018-09-12 20:31:20.331 INFO  com.convertor.number.RomanNumberHelper [31] latinToRomanNumber --  9 --> IX
+2018-09-12 20:31:20.341 INFO  com.convertor.number.RomanNumberHelper [31] latinToRomanNumber --  369 --> CCCLXIX
+2018-09-12 20:31:51.905 INFO  com.convertor.number.RomanNumberHelper [31] latinToRomanNumber --  9 --> IX
+2018-09-12 20:31:51.913 INFO  com.convertor.number.RomanNumberHelper [31] latinToRomanNumber --  369 --> CCCLXIX

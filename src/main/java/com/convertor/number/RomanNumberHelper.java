@@ -9,9 +9,11 @@ public class RomanNumberHelper {
 
 	//only support latin number i < 5000 case
 	public static String latinToRomanNumber(int latin) {
+		
 		if(latin >= 5000){
 			throw new RuntimeException("input latin number error, should < 5000");
 		}
+		
 	    String result = String.valueOf(new char[latin]).replace('\0', 'I')
 	    .replace("IIIII", "V")
 	    .replace("IIII", "IV")
