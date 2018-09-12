@@ -7,7 +7,7 @@ public class RomanNumberHelper {
 
 	private static final Logger logger = LoggerFactory.getLogger(RomanNumberHelper.class);
 
-	//only support int i < 5000 case
+	//only support latin number i < 5000 case
 	public static String latinToRomanNumber(int latin) {
 		if(latin >= 5000){
 			throw new RuntimeException("input latin number error, should < 5000");
