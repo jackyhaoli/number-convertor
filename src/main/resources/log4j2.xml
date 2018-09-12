@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+    <contextName>number-convertor</contextName>
+    <properties>
+        <property name="LOG_HOME">${sys:user.dir}/number-convertor-log/</property>
+    </properties>
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT" follow="true">
+            <!--<PatternLayout-->
+                    <!--pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level %class{36} [%L] %M - %msg%xEx%n" />-->
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level %class{36} [%L] %M - %msg%xEx%n"/>
+        </Console>
+        <RollingRandomAccessFile name="number-convertor"
+                                 immediateFlush="true" fileName="${LOG_HOME}number-convertor.log"
+                                 filePattern="${LOG_HOME}number-convertor-%i.log">
+            <PatternLayout>
+                <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level %class{36} [%L] %M --  %msg%xEx%n</pattern>
+            </PatternLayout>
+            <Policies>
+                <SizeBasedTriggeringPolicy size="20MB" />
+            </Policies>
+            <DefaultRolloverStrategy max="3"/>
+        </RollingRandomAccessFile>
+    </Appenders>
+    <Loggers>
+        <logger name="com.convertor.number" level="info" additivity="true">
+            <AppenderRef ref="number-convertor" />
+        </logger>
+        <root level="WARN">
+            <appender-ref ref="Console"/>
+        </root>
+    </Loggers>
+</Configuration>
